@@ -1,0 +1,25 @@
+{
+  "name": "receipt-processor-challenge",
+  "version": "1.0.0",
+  "description": "receipt processor service for fetch backend challenge",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Loxiiii/receipt-processor-challenge.git"
+  },
+  "author": "Javier Campos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Loxiiii/receipt-processor-challenge/issues"
+  },
+  "homepage": "https://github.com/Loxiiii/receipt-processor-challenge#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
