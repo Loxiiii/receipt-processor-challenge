@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
 app.post('/receipts/process', (req, res) => {
   // check if new receipt already exists
   const existingReceipt = receipts.find(
-    (receipt) => JSON.stringify(receipt.content) === JSON.stringify(req.body)
+    (receipt) => JSON.stringify(receipt.content) === JSON.stringify(req.body),
   );
 
   if (existingReceipt) {
