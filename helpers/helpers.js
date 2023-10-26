@@ -1,0 +1,5 @@
+const calculatePoints = (receipt) => {
+
+}
+
+const 
