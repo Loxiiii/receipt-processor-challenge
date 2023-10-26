@@ -1,5 +1,6 @@
 const express = require('express');
 const uuid = require('uuid');
+const calculatePoints = require('./helpers/helpers');
 
 const app = express();
 const port = 3000;
@@ -23,6 +24,7 @@ app.post('/receipts/process', (req, res) => {
   } else {
     const receipt = {
       id: uuid.v4(),
+      points: calculatePoints(req.body),
       content: req.body,
     };
     receipts.push(receipt);
