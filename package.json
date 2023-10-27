@@ -2,13 +2,13 @@
   "name": "receipt-processor-challenge",
   "version": "1.0.0",
   "description": "receipt processor service for fetch backend challenge",
-  "main": "index.js",
+  "main": "server/index.js",
   "directories": {
     "example": "examples"
   },
   "scripts": {
     "test": "test",
-    "dev": "node --watch index.js"
+    "dev": "node --watch server/index.js"
   },
   "repository": {
     "type": "git",
