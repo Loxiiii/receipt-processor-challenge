@@ -33,6 +33,13 @@ app.post('/receipts/process', (req, res) => {
   }
 });
 
+app.get('/receipts/:id/points', (req, res) => {
+  const requestedId = req.params.id;
+  const requestedReceipt = receipts.find((receipt) => receipt.id === requestedId);
+  res.status(200).json({ points: requestedReceipt.points });
+  // console.log('These are the request parameters: ', req.params);
+});
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
