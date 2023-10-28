@@ -7,7 +7,7 @@
     "example": "examples"
   },
   "scripts": {
-    "test": "test",
+    "test": "jest",
     "dev": "node --watch server/index.js"
   },
   "repository": {

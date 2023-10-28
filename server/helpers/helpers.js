@@ -1,4 +1,7 @@
 const countAlphanumericCharacters = (string) => {
+  if (string.length === 0) {
+    return 0;
+  }
   const characters = string.match(/[a-zA-Z0-9]/g);
   return characters ? characters.length : 0;
 };
@@ -15,8 +18,13 @@ const totalCentPoints = (receipt) => {
 
 const numOfItemsPoints = (receipt) => 5 * Math.floor(receipt.items.length / 2);
 
-const shortDescriptionItemPoints = (item) => (item.shortDescription.trim().length % 3 === 0
-  ? Math.ceil(0.2 * item.price) : 0);
+const shortDescriptionItemPoints = (item) => {
+  if (item.shortDescription.length > 0) {
+    return item.shortDescription.trim().length % 3 === 0
+      ? Math.ceil(0.2 * item.price) : 0;
+  }
+  return 0;
+};
 
 const shortDescriptionReceiptPoints = (receipt) => {
   let points = 0;
@@ -52,4 +60,13 @@ const calculatePoints = (receipt) => {
   return points;
 };
 
-module.exports = calculatePoints;
+module.exports = {
+  calculatePoints,
+  countAlphanumericCharacters,
+  totalCentPoints,
+  numOfItemsPoints,
+  shortDescriptionItemPoints,
+  shortDescriptionReceiptPoints,
+  oddDayPoints,
+  timeOfPurchasePoints,
+};
