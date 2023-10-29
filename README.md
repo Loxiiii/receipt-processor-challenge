@@ -6,8 +6,6 @@ The Receipt Processor API is a Node.js application that processes receipts and a
 - [Getting Started](#getting-started)
   - [Running with Docker](#running-with-docker)
   - [Running natively](#running-natively)
-    - [Prerequisites](#prerequisites)
-    - [Installation](#installation)
 - [API Endpoints](#api-endpoints)
   - [Process Receipts](#process-receipts)
   - [Get Points](#get-points)
@@ -15,7 +13,6 @@ The Receipt Processor API is a Node.js application that processes receipts and a
 - [Rules](#rules)
 - [Authors](#authors)
 - [License](#license)
-- [Acknowledgments](#acknowledgments)
 
 ## Getting Started
 
