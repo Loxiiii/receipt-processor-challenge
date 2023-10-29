@@ -34,13 +34,13 @@ cd receipt-processor-challenge
 3. Build a Docker image from the provided Dockerfile:
 
   ```bash
-  docker build -t loxiiii/receipt-processor
+  docker build -t loxiiii/receipt-processor .
   ```
 
 4. Run the docker container:
 
   ```bash
-  docker run -p 49169:1010 loxiiii/receipt-processor
+  docker run -p 49160:1010 loxiiii/receipt-processor
   ```
 
   Note: the -p flag allows for port-forwarding `<local-machine-port>:<docker-container-port>`. In the provided example, requests to port 49160 on the local machine
