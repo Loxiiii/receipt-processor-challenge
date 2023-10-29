@@ -53,6 +53,7 @@ cd receipt-processor-challenge
 5. Test the application:
   ```bash
   docker exec -it loxiiii-receipt-processor-container npm run test
+  ```
 
 
 ### Running natively
