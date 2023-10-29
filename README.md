@@ -4,9 +4,10 @@ The Receipt Processor API is a Node.js application that processes receipts and a
 
 ## Table of Contents
 - [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
   - [Running with Docker](#running-with-docker)
+  - [Running natively](#running-natively)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
 - [API Endpoints](#api-endpoints)
   - [Process Receipts](#process-receipts)
   - [Get Points](#get-points)
@@ -36,7 +37,7 @@ If you prefer to run the application in a Docker container, follow these steps:
   docker run -p 49169:1010 loxiiii/receipt-processor
   ```
 
-  Note: the -p flag allows for port-forwarding <local-machine-port>:<docker-container-port>. In the provided example, requests to port 49160 on the local machine
+  Note: the -p flag allows for port-forwarding `<local-machine-port>:<docker-container-port>`. In the provided example, requests to port 49160 on the local machine
   will be redirected to port 1010 of the docker container.
   When testing this API, please send your requests to port 49160 of your local machine.
 
