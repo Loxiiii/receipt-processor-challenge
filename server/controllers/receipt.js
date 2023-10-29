@@ -1,5 +1,5 @@
 const uuid = require('uuid');
-const calculatePoints = require('../helpers/helpers');
+const { calculatePoints } = require('../helpers/helpers');
 
 // This array is used to store the data in memory
 const receipts = [];
