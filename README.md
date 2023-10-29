@@ -22,13 +22,22 @@ These instructions will help you get your Receipt Processor API up and running. 
 
 If you prefer to run the application in a Docker container, follow these steps:
 
-1. Build a Docker image from the provided Dockerfile:
+1. Clone the repository to your local machine:
+  ```bash
+  git clone https://github.com/Loxiiii/receipt-processor-challenge.git
+  ```
+2. Navigate to the project directory:
+```bash
+cd receipt-processor-challenge
+```
+
+3. Build a Docker image from the provided Dockerfile:
 
   ```bash
   docker build -t loxiiii/receipt-processor
   ```
 
-2. Run the docker container:
+4. Run the docker container:
 
   ```bash
   docker run -p 49169:1010 loxiiii/receipt-processor
