@@ -28,11 +28,13 @@ If you prefer to run the application in a Docker container, follow these steps:
 
   ```bash
   docker build -t loxiiii/receipt-processor
+  ```
 
 2. Run the docker container:
 
   ```bash
   docker run -p 49169:1010 loxiiii/receipt-processor
+  ```
 
   Note: the -p flag allows for port-forwarding <local-machine-port>:<docker-container-port>. In the provided example, requests to port 49160 on the local machine
   will be redirected to port 1010 of the docker container.
