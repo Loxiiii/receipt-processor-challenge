@@ -11,7 +11,7 @@ const postAndProcessReceipt = (req, res) => {
   );
 
   if (existingReceipt) {
-    res.status(400).send('That receipt already exists in the database');
+    res.status(204).send('That receipt already exists in the database, no resource was created');
   } else {
     const receipt = {
       id: uuid.v4(),
@@ -19,7 +19,7 @@ const postAndProcessReceipt = (req, res) => {
       content: req.body,
     };
     receipts.push(receipt);
-    res.status(200).json({ id: receipt.id });
+    res.status(201).json({ id: receipt.id });
   }
 };
 
