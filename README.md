@@ -130,7 +130,7 @@ Content-Type: application/json
 Example Response for Get Points
 
 ```http
-GET /receipts/7fb1377b-b223-49d9-a31a-5a02701dd310/points
+GET /receipts/<receipt-uuid>/points
 
 {
   "points": 28
