@@ -126,15 +126,16 @@ Content-Type: application/json
   ],
   "total": "35.35"
 }
+```
 Example Response for Get Points
 
-http
-Copy code
+```http
 GET /receipts/7fb1377b-b223-49d9-a31a-5a02701dd310/points
 
 {
   "points": 28
 }
+```
 
 ### Rules
 The points awarded to a receipt are determined by the following rules:
