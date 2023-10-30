@@ -25,9 +25,13 @@ const postAndProcessReceipt = (req, res) => {
 
 // Controller to get the points of a receipt by ID
 const getPointsByReceiptId = (req, res) => {
-  const requestedId = req.params.id;
-  const requestedReceipt = receipts.find((receipt) => receipt.id === requestedId);
-  res.status(200).json({ points: requestedReceipt.points });
+  try {
+    const requestedId = req.params.id;
+    const requestedReceipt = receipts.find((receipt) => receipt.id === requestedId);
+    res.status(200).json({ points: requestedReceipt.points });
+  } catch {
+    res.status(404).json('No receipt found with the provided ID');
+  }
 };
 
 module.exports = {
